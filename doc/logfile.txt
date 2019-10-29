@@ -1,0 +1,62 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files (x86)\BlueJ\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.11.jar;C:\Program Files (x86)\BlueJ\lib\hamcrest-core-1.3.jar;C:\Program Files (x86)\BlueJ\lib\lang-stride.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-service.jar;C:\Users\RHS\Documents\GitHub\MatrixMath
+-d
+C:\Users\RHS\Documents\GitHub\MatrixMath\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java...
+C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java:20: error: illegal start of expression
+    }
+    ^
+C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java:20: error: ';' expected
+    }
+     ^
+C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java:28: error: ';' expected
+    public int[] rowSum()
+                       ^
+C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java:41: error: illegal start of expression
+    public double[] rowAve()
+    ^
+C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java:41: error: ';' expected
+    public double[] rowAve()
+                          ^
+C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java:52: error: illegal start of expression
+    public int[] colSum()
+    ^
+C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java:52: error: ';' expected
+    public int[] colSum()
+                       ^
+C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java:62: error: illegal start of expression
+    public double[] colAve()
+    ^
+C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java:62: error: ';' expected
+    public double[] colAve()
+                          ^
+C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java:67: error: illegal start of expression
+    public String toString()
+    ^
+C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java:67: error: ';' expected
+    public String toString()
+                          ^
+C:\Users\RHS\Documents\GitHub\MatrixMath\MatrixMath.java:71: error: reached end of file while parsing
+}
+ ^
+12 errors

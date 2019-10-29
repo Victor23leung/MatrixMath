@@ -16,8 +16,9 @@ public class MatrixMath
     public MatrixMath(int[][] data)
     {
         // initialise instance variables
-       
+        this.data = new int[data.length][data[0].length]; 
     }
+    
 
     /**
      * Find the sum of all the elements in each row.
@@ -25,9 +26,19 @@ public class MatrixMath
      *
      * @return    int[]
      */
+
     public int[] rowSum()
     {
-        return null;
+        int [] sumRow = new int [data.length];
+        for (int i=0; i<data.length; i++)
+        {
+            sumRow=0;
+            for (int j=0; j<data[0].length; j++)
+            {
+                sumRow += data[0][i];
+            }
+        }
+        return sumRow;  
     }
     
         /**
@@ -61,4 +72,8 @@ public class MatrixMath
         return null;
     }
     
+    public String toString()
+    {
+        return null;
+    }
 }
