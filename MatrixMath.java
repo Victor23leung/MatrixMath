@@ -16,7 +16,7 @@ public class MatrixMath
     public MatrixMath(int[][] data)
     {
         // initialise instance variables
-        this.data = new int[data.length][data[0].length]; 
+        this.data = data; 
     }
     
 
@@ -32,11 +32,12 @@ public class MatrixMath
         int [] sumRow = new int [data.length];
         for (int i=0; i<data.length; i++)
         {
-            sumRow=0;
+            int sum=0;
             for (int j=0; j<data[0].length; j++)
             {
-                sumRow += data[0][i];
+                sum += data[i][j];
             }
+            sumRow[i]=sum;
         }
         return sumRow;  
     }
@@ -48,10 +49,20 @@ public class MatrixMath
      */
     public double[] rowAve()
     {
-        return null;
+        double [] rowAve = new double[data.length];
+        for (int i=0; i<data.length; i++)
+        {
+            double rAverage=0;
+            for (int j=0; j<data[0].length; j++)
+            {
+                rAverage += data[i][j];
+            }
+            rowAve[i]=rAverage/data[0].length;
+        }
+        return rowAve; 
     }
     
-        /**
+    /**
      * Find the sum of all the numbers in column
      * 
      *
@@ -59,7 +70,17 @@ public class MatrixMath
      */
     public int[] colSum()
     {
-        return null;
+        int [] colSum = new int [data.length];
+        for (int i=0; i<data.length; i++)
+        {
+            int cSum=0;
+            for (int j=0; j<data[0].length; j++)
+            {
+                cSum += data[i][j];
+            }
+            colSum[i]=cSum;
+        }
+        return colSum;
     }
     
      /**
@@ -69,11 +90,17 @@ public class MatrixMath
      */
     public double[] colAve()
     {
-        return null;
+        double [] colAve = new double[data.length];
+        for (int i=0; i<data.length; i++)
+        {
+            double cAverage=0;
+            for (int j=0; j<data[0].length; j++)
+            {
+                cAverage += data[i][j];
+            }
+            colAve[i]=cAverage/data[0].length;
+        }
+        return colAve;
     }
-    
-    public String toString()
-    {
-        return null;
-    }
+
 }
