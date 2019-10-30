@@ -49,17 +49,13 @@ public class MatrixMath
      */
     public double[] rowAve()
     {
-        double [] rowAve = new double[data.length];
+        double [] aveRow = new double[data.length];
+        int [] sums = rowSum();
         for (int i=0; i<data.length; i++)
         {
-            double rAverage=0;
-            for (int j=0; j<data[0].length; j++)
-            {
-                rAverage += data[i][j];
-            }
-            rowAve[i]=rAverage/data[0].length;
+           aveRow[i] = (sums[i]*1.0)/data[i].length; 
         }
-        return rowAve; 
+        return aveRow; 
     }
     
     /**
@@ -70,13 +66,13 @@ public class MatrixMath
      */
     public int[] colSum()
     {
-        int [] colSum = new int [data.length];
-        for (int i=0; i<data.length; i++)
+        int [] colSum = new int [data[0].length];
+        for (int i=0; i<data[0].length; i++)
         {
             int cSum=0;
-            for (int j=0; j<data[0].length; j++)
+            for (int j=0; j<data.length; j++)
             {
-                cSum += data[i][j];
+                cSum += data[j][i];
             }
             colSum[i]=cSum;
         }
@@ -90,17 +86,13 @@ public class MatrixMath
      */
     public double[] colAve()
     {
-        double [] colAve = new double[data.length];
+        double [] aveCol = new double[data[0].length];
+        int [] sums = colSum();
         for (int i=0; i<data.length; i++)
-        {
-            double cAverage=0;
-            for (int j=0; j<data[0].length; j++)
             {
-                cAverage += data[i][j];
+               aveCol[i] = (sums[i]*1.0)/data.length; 
             }
-            colAve[i]=cAverage/data[0].length;
-        }
-        return colAve;
+        return aveCol; 
     }
 
 }
